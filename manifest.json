@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Twitter Custom Text Extension",
+    "description": "Replaces all tweets with custom text.",
+    "permissions": [
+      "activeTab",
+      "tabs"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://twitter.com/*", "*://x.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "version": "1.0"
+  }
